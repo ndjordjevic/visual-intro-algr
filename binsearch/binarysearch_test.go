@@ -28,6 +28,14 @@ func Test_binarySearch(t *testing.T) {
 			},
 			want: -1,
 		},
+		{
+		name: "Should return 4",
+		args: args{
+			list:   []int{0,1,2,3,4,5},
+			target: 5,
+		},
+		want: 5,
+	},
 	}
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
