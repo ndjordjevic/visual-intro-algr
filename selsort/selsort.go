@@ -1,9 +1,7 @@
 package selsort
 
 func swap(list []int, start int, end int) {
-	temp := list[start]
-	list[start] = list[end]
-	list[end] = temp
+	list[start], list[end] = list[end], list[start]
 }
 
 func indexOfMinimum(list []int, startI int) int {
